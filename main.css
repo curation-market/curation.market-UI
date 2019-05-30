@@ -43,6 +43,7 @@ body {
 
 .header .header-button {
 	float: right;
+	transition: 0.2s;
 	margin-top: 17px;
 	font-size: 24px;
 	color: #fff;
@@ -53,6 +54,12 @@ body {
 	border-radius: 25.5px;
 	padding: 6px 34px;
 	outline: none;
+	text-decoration: none;
+}
+
+.header .header-button:hover {
+	background: white;
+	color: black;
 }
 
 @media only screen and (max-width: 767px) {
@@ -93,18 +100,27 @@ body {
 	line-height: 70px;
 	z-index: 9;
 	font-family: ProximaNova-Light;
+	text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
 	.curation-background .curation-background-title {
 		font-size: 40px;
 		line-height: 40px;
-		padding: 132px 5px;
+		padding: 132px 15px;
 	}
 }
 
 .curation-background .curation-background-title .typed-strings {
 	color: #23b4c3;
+	display: inline-block;
+	min-width: 500px;
+}
+
+@media only screen and (max-width: 767px) {
+	.curation-background .curation-background-title .typed-strings {
+		min-width: 200px;
+	}
 }
 
 .main-part-title {
@@ -189,6 +205,14 @@ body {
 .columns-section .third-table-link {
 	display: block;
 	text-decoration: none;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.columns-section .first-table-link *,
+.columns-section .second-table-link *,
+.columns-section .third-table-link * {
+	cursor: pointer;
 }
 
 .columns-section .first-table-link .title-of-link,
@@ -196,6 +220,13 @@ body {
 .columns-section .third-table-link .title-of-link {
 	font-size: 22px;
 	font-family: ProximaNova-Light;
+	
+}
+
+.columns-section .first-table-link:hover,
+.columns-section .second-table-link:hover,
+.columns-section .third-table-link:hover {
+	opacity: 0.6;
 }
 
 .columns-section .first-table-link .title-of-link {
@@ -294,6 +325,11 @@ body {
 	text-decoration: underline;
 }
 
+.left-bottom-column .link:hover, .right-bottom-column .link:hover {
+	text-decoration: none;
+	color: black;
+}
+
 .left-bottom-column .link, .right-bottom-column .link, .right-bottom-column .view {
 	font-size: 14px;
 	color: #068485;
@@ -362,6 +398,10 @@ body {
 	text-decoration: underline;
 }
 
+.footer .column-top-indent .footer-list a:hover {
+	text-decoration: none;
+}
+
 .footer .footer-text {
 	color: #fff;
 	font-size: 16px;
@@ -377,10 +417,14 @@ body {
 	.footer .footer-text {
 		margin: 0 15px;
 	}
+	
+	.sub-column1 {
+		text-align: -webkit-auto;
+		width: 65px;
+	}
 
-}
-.header .header-button:hover {
-    background: white;
-    color: black;
+	.header {
+		padding: 0 15px;
+	}
 }
 
