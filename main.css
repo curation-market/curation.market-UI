@@ -377,5 +377,10 @@ body {
 	.footer .footer-text {
 		margin: 0 15px;
 	}
+
+}
+.header .header-button:hover {
+    background: white;
+    color: black;
 }
 
